@@ -1,14 +1,12 @@
 .header {
   background-color: var(--BADGER_RED);
-  padding: 0px 72px; /* [top/bottom] [left/right] */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 60px;
+height: 60px;
+padding: 0 72px;
+justify-content: space-between;
+align-items: center;
+flex-shrink: 0;
+align-self: stretch;
 }
 
 .title {
