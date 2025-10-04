@@ -4,7 +4,6 @@
 );
 
 :root {
-  /* Custom Colors */
   --BADGER_RED: #c5050c;
   --DARK_GRAY: #6C6C6C;
   --LIGHT_GRAY: #EAEAEA;
@@ -33,6 +32,12 @@ a:hover {
 }
 
 body {
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Remove default margins from headings */
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
