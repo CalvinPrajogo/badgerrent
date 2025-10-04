@@ -1,14 +1,21 @@
+/*Wix Madefor Display*/
+@import url(
+  'https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap'
+);
+
 :root {
   /* Custom Colors */
   --BADGER_RED: #c5050c;
+  --DARK_GRAY: #6C6C6C;
+  --LIGHT_GRAY: #EAEAEA;
 
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: wix madefor text-regular, Helvetica, Arial, sans-serif;
+  line-height: normal;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,8 +39,38 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: "Wix Madefor Text";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Wix Madefor Text";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Wix Madefor Text";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h4 {
+  font-family: "Wix Madefor Text";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p1 {
+  font-family: "Wix Madefor Text";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 button {

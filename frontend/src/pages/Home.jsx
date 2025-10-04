@@ -4,6 +4,9 @@ function Home() {
   return (
     <div>
         <Header />
+        <h1>
+        Header1
+      </h1>
     </div>
   );
 }
