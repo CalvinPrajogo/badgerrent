@@ -1,8 +1,9 @@
+import Header from "../components/common/Header.jsx"
+
 function Home() {
   return (
     <div>
-      <h1>BadgerRent</h1>
-      <p>Find your perfect rental property near UW Madison</p>
+        <Header />
     </div>
   );
 }
