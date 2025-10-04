@@ -1,12 +1,11 @@
 /*Wix Madefor Display*/
-@import url(
-  'https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap'
-);
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
 
 :root {
   --BADGER_RED: #c5050c;
-  --DARK_GRAY: #6C6C6C;
-  --LIGHT_GRAY: #EAEAEA;
+  --DARK_GRAY: #6c6c6c;
+  --LIGHT_GRAY: #eaeaea;
+  --MEDIUM_GRAY: #d9d9d9;
 
   font-family: wix madefor text-regular, Helvetica, Arial, sans-serif;
   line-height: normal;
@@ -31,7 +30,8 @@ a:hover {
   color: #535bf2;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
@@ -45,8 +45,13 @@ html, body {
   box-sizing: border-box; /* Ensure padding/borders don't add to element width */
 }
 
-/* Remove default margins from headings */
-h1, h2, h3, h4, h5, h6 {
+/*TEXT */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -85,11 +90,35 @@ p1 {
   font-weight: 400;
 }
 
-p1 {
+p2 {
   font-family: "Wix Madefor Text";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+}
+
+red-link {
+  font-family: "Wix Madefor Text";
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--BADGER_RED);
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*SPACERS*/
+vertical-spacer {
+  width: 2px;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: var(--MEDIUM_GRAY);
+}
+
+horizontal-spacer {
+  height: 2px;
+  flex-shrink: 0;
+  align-self: stretch;
+  background: var(--MEDIUM_GRAY);
 }
 
 button {

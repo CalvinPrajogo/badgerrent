@@ -2,7 +2,7 @@
   background-color: var(--BADGER_RED);
   display: flex;
   height: 60px;
-  padding: 0 72px;
+  padding: 0 6vw;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
