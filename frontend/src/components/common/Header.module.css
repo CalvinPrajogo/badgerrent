@@ -1,6 +1,6 @@
 .header {
   background-color: var(--BADGER_RED);
-  padding: 1rem 2rem;
+  padding: 0px 72px; /* [top/bottom] [left/right] */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -8,6 +8,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
+  height: 60px;
 }
 
 .title {
