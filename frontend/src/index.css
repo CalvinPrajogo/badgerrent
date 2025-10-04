@@ -85,6 +85,13 @@ p1 {
   font-weight: 400;
 }
 
+p1 {
+  font-family: "Wix Madefor Text";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

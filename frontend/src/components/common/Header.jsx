@@ -1,9 +1,11 @@
-import styles from './Header.module.css';
+import styles from "./Header.module.css";
 
 export default function Header() {
-   return (
+  return (
     <nav className={styles.header}>
-        <h1>Badger<b>Rent</b></h1>
+      <h3 style={{ color: "white" }}>
+        Badger<b>Rent</b>
+      </h3>
     </nav>
-   );
+  );
 }
