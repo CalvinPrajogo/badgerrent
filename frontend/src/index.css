@@ -3,7 +3,7 @@
 
 :root {
   --BADGER_RED: #c5050c;
-  --DARK_GRAY: #6c6c6c;
+  --DARK_GRAY: #767676;
   --LIGHT_GRAY: #eaeaea;
   --MEDIUM_GRAY: #d9d9d9;
 
@@ -150,5 +150,40 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1200px) {
+  p1 {
+    font-size: 14px;
+  }
+
+  p2 {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  red-link {
+    font-family: "Wix Madefor Text";
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--BADGER_RED);
+    cursor: pointer;
+    z-index: 100;
   }
 }

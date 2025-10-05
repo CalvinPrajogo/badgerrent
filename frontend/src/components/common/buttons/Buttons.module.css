@@ -1,0 +1,17 @@
+.white-outline-button {
+  cursor: pointer;
+  display: flex;
+  padding: 15px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 2px solid white;
+  color: white;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.white-outline-button:hover {
+  background-color: white;
+  color: var(--BADGER_RED);
+}
