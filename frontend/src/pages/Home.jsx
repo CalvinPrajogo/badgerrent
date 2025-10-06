@@ -37,6 +37,7 @@ function Home() {
           <PropertyCard />
           <PropertyCard />
           <PropertyCard />
+          <PropertyCard />
         </div>
       </div>
       <div className={Styles["sublease-section"]}>

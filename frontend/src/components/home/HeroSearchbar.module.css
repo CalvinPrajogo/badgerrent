@@ -5,7 +5,7 @@
   align-items: center;
   border-radius: 100px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .input-container {
@@ -29,9 +29,11 @@
   align-items: center;
   flex-shrink: 0;
   align-self: stretch;
+  border-radius: 0px 100px 100px 0px;
 }
 
 .dropdown-container {
+  position: relative;
   display: flex;
   width: 100%;
   justify-content: space-between;
