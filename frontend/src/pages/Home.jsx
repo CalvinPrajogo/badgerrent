@@ -12,12 +12,21 @@ function Home() {
       <Header />
       <div className={Styles["homepage-container"]}>
         <div className={Styles["hero-section"]}>
-          <h2>Your search for the perfect place starts here.</h2>
+          <h2
+            style={{
+              color: "white",
+              textShadow: "0 0 20px rgba(0,0,0,0.5)",
+              paddingLeft: "2vw"
+            }}
+          >
+            Your search for the perfect place starts here.
+          </h2>
           <HeroSearchbar />
           <red-link
             style={{
               color: "white",
               textShadow: "0 0 20px rgba(0,0,0,0.5)",
+              paddingLeft: "2vw"
             }}
           >
             Additional filters...
