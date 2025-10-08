@@ -14,7 +14,7 @@
   height: 400px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   gap: 20px;
   padding: 6vw;
   flex-shrink: 0;

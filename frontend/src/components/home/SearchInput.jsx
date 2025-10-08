@@ -2,7 +2,7 @@ import styles from "./HeroSearchbar.module.css";
 import React from "react";
 import Select from "react-select";
 
-export default function SearchDropdown({ options }) {
+export default function SearchInput({ options }) {
   return (
     <Select
       className={styles["dropdown-text"]}
@@ -29,21 +29,13 @@ export default function SearchDropdown({ options }) {
         indicatorSeparator: () => ({
           display: "none",
         }),
-        indicatorsContainer: (baseStyles) => ({}),
-        dropdownIndicator: (baseStyles) => ({
-          padding: "0px",
-          color: "var(--DARK_GRAY)",
-          "&:hover": {
-            color: "var(--BADGER_RED)",
-          },
-          cursor: "pointer",
-        }),
-        input: () => ({
+        indicatorsContainer: (baseStyles) => ({
           display: "none",
         }),
         placeholder: () => ({
+          position: "absolute",
           color: "black",
-          fontFamily: "Wix Madefor Text",
+          paddingTop: "3px",
         }),
         menu: (baseStyles) => ({
           ...baseStyles,
@@ -63,6 +55,11 @@ export default function SearchDropdown({ options }) {
           color: "black",
           cursor: "pointer",
           backgroundColor: isFocused ? "var(--LIGHT_GRAY)" : null,
+        }),
+        singleValue: (baseStyles) => ({
+          ...baseStyles,
+          position: "absolute",
+          paddingTop: "3px",
         }),
       }}
     />
