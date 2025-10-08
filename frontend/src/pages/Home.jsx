@@ -16,7 +16,7 @@ function Home() {
             style={{
               color: "white",
               textShadow: "0 0 20px rgba(0,0,0,0.5)",
-              paddingLeft: "2vw"
+              paddingLeft: "2vw",
             }}
           >
             Your search for the perfect place starts here.
@@ -26,7 +26,7 @@ function Home() {
             style={{
               color: "white",
               textShadow: "0 0 20px rgba(0,0,0,0.5)",
-              paddingLeft: "2vw"
+              paddingLeft: "2vw",
             }}
           >
             Additional filters...
@@ -35,12 +35,11 @@ function Home() {
       </div>
       <div className={Styles["featured-section"]}>
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <h2 style={{ color: "var(--DARK_GRAY)" }}>Featured Listings</h2>
-          <img
-            src={RightArrow}
-            alt="Right arrow"
-            style={{ aspectRatio: "1 / 1", height: "35px" }}
-          />
+          <h2
+            className={Styles["red-on-hover"]}
+          >
+            Featured Listings
+          </h2>
         </div>
         <div className={Styles["cards-container"]}>
           <PropertyCard />

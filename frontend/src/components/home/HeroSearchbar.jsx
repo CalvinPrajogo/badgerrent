@@ -1,11 +1,11 @@
 import styles from "./HeroSearchbar.module.css";
-import { DropdownButton } from "../common/buttons/DropdownButton";
 import SearchIcon from "../../assets/search-icon.svg";
 import SearchDropdown from "./SearchDropdown";
 import SearchInput from "./SearchInput";
 import React from "react";
-import Select from "react-select";
 
+
+// temporary options
 const buildingOptions = [
   { value: 0, label: "Any" },
   { value: "apartment", label: "Apartment" },
@@ -28,32 +28,36 @@ export default function HeroSearchbar() {
         style={{ paddingLeft: "36px", maxWidth: "20%" }}
       >
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Building type</p2>
-        <SearchDropdown options={buildingOptions}></SearchDropdown>
+        <SearchDropdown id="buildingTypeSelect" options={buildingOptions}></SearchDropdown>
       </div>
       <vertical-spacer />
       <div className={styles["input-container"]}>
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Location</p2>
-        <SearchInput options={buildingOptions}></SearchInput>
+        <SearchInput id="locationInput" options={buildingOptions}></SearchInput>
       </div>
       <vertical-spacer />
       <div className={styles["input-container"]} style={{ maxWidth: "10%" }}>
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Beds</p2>
-        <SearchDropdown options={numOptions}></SearchDropdown>
+        <SearchDropdown id="numBedsSelect" options={numOptions}></SearchDropdown>
       </div>
       <vertical-spacer />
       <div className={styles["input-container"]} style={{ maxWidth: "10%" }}>
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Baths</p2>
-        <SearchDropdown options={numOptions}></SearchDropdown>
+        <SearchDropdown id="numBathsSelect" options={numOptions}></SearchDropdown>
       </div>
       <vertical-spacer />
       <div className={styles["input-container"]} style={{ maxWidth: "12%" }}>
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Min $</p2>
-        <p1>Any</p1>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          $<input id="minRentInput" placeholder="--"></input>
+        </div>
       </div>
       <vertical-spacer />
       <div className={styles["input-container"]} style={{ maxWidth: "12%" }}>
         <p2 style={{ color: "var(--DARK_GRAY)" }}>Max $</p2>
-        <p1>Any</p1>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          $<input id="maxRentInput" placeholder="--"></input>
+        </div>
       </div>
       <div className={styles["search-button"]} style={{ cursor: "pointer" }}>
         <img src={SearchIcon} alt="Search icon" />

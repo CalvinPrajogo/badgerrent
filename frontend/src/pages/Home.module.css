@@ -65,3 +65,13 @@
   gap: 10%;
   flex: 1 0 0;
 }
+
+.red-on-hover {
+  color: var(--DARK_GRAY);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.red-on-hover:hover {
+  color: var(--BADGER_RED);
+}

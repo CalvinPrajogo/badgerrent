@@ -45,6 +45,16 @@
   font-size: 16px;
 }
 
+input {
+  background-color: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  font-family: "Wix Madefor Text";
+  font-size: 16px;
+  width: 100%;
+}
+
 @media (max-width: 1200px) {
   .dropdown-text {
     font-family: "Wix Madefor Text";
