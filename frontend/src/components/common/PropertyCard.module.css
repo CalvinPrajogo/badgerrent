@@ -3,7 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  flex: 1 0 0;
+  min-width: 300px;  /* Fixed minimum width so cards don't shrink */
+  max-width: 300px;  /* Fixed maximum width for consistent sizing */
+  flex-shrink: 0;    /* Prevent cards from shrinking */
   align-self: stretch;
   border-radius: 10px;
   background: #ffffff;

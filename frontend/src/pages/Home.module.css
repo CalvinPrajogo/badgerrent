@@ -32,10 +32,25 @@
 
 .cards-container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   gap: 20px;
   align-self: stretch;
+  
+  /* Horizontal scroll */
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  
+  /* Hide scrollbar completely */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cards-container::-webkit-scrollbar {
+  display: none;
 }
 
 .sublease-section {
