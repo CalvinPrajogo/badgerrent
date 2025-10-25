@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import propertiesRouter from "./routes/properties.js";
 
 const app = express();
 
@@ -14,6 +15,9 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.json({ message: "BadgerRent API is running!" });
 });
+
+// Mount properties router at /api/properties
+app.use("/api/properties", propertiesRouter);
 
 // Start the server
 app.listen(PORT, () => {
